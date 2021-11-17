@@ -1,0 +1,36 @@
+const mineflayer = require('mineflayer')
+const pathfinder = require('mineflayer-pathfinder').pathfinder
+const Movements = require('mineflayer-pathfinder').Movements
+const { GoalNear } = require('mineflayer-pathfinder').goals
+
+const bot = mineflayer.createBot({
+  host: 'mc.hypixel.net',
+  port: 25565,
+  version: '1.8.9',
+  auth: 'mojang',
+  username: 'THEBOT'SEMAILCHANGETHISDUH',
+  password: 'THEBOT'SPASSWORDCHANGETHISDUH'
+})
+bot.loadPlugin(pathfinder)
+function myFunction() {
+  const mcData = require('minecraft-data')(bot.version)
+  const defaultMove = new Movements(bot, mcData)
+  defaultMove.canDig = false
+  defaultMove.maxDropDown = 100
+  const { GoalNear } = require('mineflayer-pathfinder').goals
+     bot.pathfinder.setMovements(defaultMove)
+     bot.pathfinder.setGoal(new GoalNear(12, 72, 0, 0))
+}
+function urMomsFunction() {
+   bot.chat('/party accept YOURUSERNAMEUIDIOT')
+}
+uhvariable = 0
+for (let step = 0; step < 10000; step++) {
+  uhvariable = uhvariable + 2000
+  setTimeout(myFunction, uhvariable)
+}
+funivariable = 0
+for (let uhidkwhatimdoing = 0; uhidkwhatimdoing < 3; uhidkwhatimdoing++) {
+  funivariable = funivariable + 10000
+  setTimeout(urMomsFunction, funivariable)
+}
